@@ -38,23 +38,13 @@
     <!-- separator -->
     <div style="width:100%;height:1px;margin-top:15px;background-color:black"></div>
 
-    <!-- title -->
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col offset-lg-2">
-          <h1>Život v zahraničí – návod pre slováka</h1>
-        </div>
-      </div>
-    </div>
-
-
     <!-- body -->
     <div class="container-fluid">
       <div class="row">
-        <!-- sidebar -->
-        <div class="col-lg-2">
+        <!-- sidebar visible when page is large -->
+        <div class="col-lg-2 d-none d-lg-block">
           <div class="sidebar-header">
-              <h3>Obsah</h3>
+              <h2 style="margin-top: 40px">Obsah</h2>
           </div>
           <ul class="list-unstyled components">
             <li><a href="#uvod">Úvod</a></li>
@@ -65,6 +55,19 @@
         </div>
         <!-- content -->
         <div class="col-lg-8">
+          <h1>Život v zahraničí – návod pre slováka</h1>
+
+          <!-- navigation visible when page is small -->
+          <div class="d-lg-none">
+            <h2>Obsah</h2>
+            <ul class="list-unstyled components">
+              <li><a href="#uvod">Úvod</a></li>
+              <li><a href="#pred-odchodom-do-zahranicia">Pred odchodom</a></li>
+              <li><a href="#v-zahranici">V zahraničí</a></li>
+              <!-- <li><a href="#navrat-na-Slovensko">Návrat na Slovensko</a></li> -->
+            </ul>
+          </div>
+
           <div id="uvod">
             <h2>Úvod</h2>
             <p>Svet za hranicami je domovom asi jedného milióna slovákov. Rovnako ako Vy, každý má svoje vlastné dôvody, prečo sa rozhodol žiť v cudzej krajine, či už pracovať, študovať, odísť do dôchodku alebo hľadať nové príležitosti. Bydlisko v zahraničí - či už trvalé alebo dočasné - môže byť bohatým a obohacujúcim zážitkom.</p>
