@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
-    <!-- JavaScript -->
-    <script src="js/jquery-1.11.0.min.js"></script>
-
     <title>Život v zahraničí – návod pre slováka</title>
   </head>
   <body>
@@ -56,17 +53,6 @@
             <li><a href="#v-zahranici">V zahraničí</a></li>
             <!-- <li><a href="#navrat-na-Slovensko">Návrat na Slovensko</a></li> -->
           </ul>
-
-          <script>
-            //scrolling actions of the navbar buttons
-            $('.navbar-link').click(function(e) {
-              e.preventDefault();
-              var scrollto = $(this).attr('href');
-              $('html, body').animate({
-                scrollTop: $(scrollto).offset().top
-              }, 1500);
-            });
-          </script>
         </div>
         <!-- content -->
         <div class="col-lg-8">
