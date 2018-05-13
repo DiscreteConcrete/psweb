@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- JavaScript -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+
     <title>Život v zahraničí – návod pre slováka</title>
   </head>
   <body>
@@ -48,15 +51,26 @@
               <h3>Obsah</h3>
           </div>
           <ul class="list-unstyled components">
-            <li><a href="#">Úvod</a></li>
-            <li><a href="#">Pred odchodom zo Slovenska</a></li>
-            <li><a href="#">V zahraničí</a></li>
-            <li><a href="#">Návrat na Slovensko</a></li>
+            <li><a href="#uvod">Úvod</a></li>
+            <li><a href="#pred-odchodom-do-zahranicia">Pred odchodom do zahraničia</a></li>
+            <li><a href="#v-zahranici">V zahraničí</a></li>
+            <li><a href="#navrat-na-Slovensko">Návrat na Slovensko</a></li>
           </ul>
+
+          <script>
+            //scrolling actions of the navbar buttons
+            $('.navbar-link').click(function(e) {
+              e.preventDefault();
+              var scrollto = $(this).attr('href');
+              $('html, body').animate({
+                scrollTop: $(scrollto).offset().top
+              }, 1500);
+            });
+          </script>
         </div>
         <!-- content -->
         <div class="col-lg-8">
-          <div>
+          <div id="uvod">
             <h2>Úvod</h2>
             <p>Svet za hranicami je domovom asi jedného milióna slovákov. Rovnako ako Vy, každý má svoje vlastné dôvody, prečo sa rozhodol žiť v cudzej krajine, či už pracovať, študovať, odísť do dôchodku alebo hľadať nové príležitosti. Bydlisko v zahraničí - či už trvalé alebo dočasné - môže byť bohatým a obohacujúcim zážitkom.</p>
 
@@ -73,7 +87,7 @@
               <li>plánovať prípadný návrat na Slovensko</li>
             </ul>
           </div>
-          <div style="margin-top:40px">
+          <div id="pred-odchodom-do-zahranicia" style="margin-top:40px">
             <h2>Pred odchodom do zahraničia</h2>
             <h3>Zhodnotenie rizík</h3>
             <p>Pred odchodom do zahraničia je dôležité vyhodnotiť nie len výhody, ale aj riziká. Informácie o rizikách v jednotlivých krajinách nájdete <a href="https://www.mzv.sk/cestovanie_a_konzularne_info/staty_sveta-staty_podla_abecedy">na stránke ministerstva zahraničných vecí a európskych záležitostí</a>.</p>
