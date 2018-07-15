@@ -26,3 +26,28 @@ h1 {
 h2, h3 {
 	margin-top: 18px;
 }
+
+.three-points {
+  background-color: #00b4db;
+  color: white;
+  text-align: center;
+}
+
+/*
+heigths
+preheader: 40px
+header: 90px
+carousel: 550;
+tri veci: 100px;
+budte pri tom: 110px;
+big pre-footer: 488px;
+footer: 86px;
+*/
+
+/*
+PS cyan rgb(0, 180, 219)
+dark cyan #00b4db
+red rgb(229, 38, 63)
+light grey: #898989
+dark grey: #333;
+ */
